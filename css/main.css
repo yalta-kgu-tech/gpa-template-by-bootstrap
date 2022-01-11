@@ -1,0 +1,25 @@
+#header-logo{
+  margin: 8px 8px 8px 16px;
+  padding: 0px 16px 0px 0px;
+  border-right: white solid 3px;
+  height: 84px;
+  object-fit: contain;
+}
+
+#header-text{
+  font-size: 20px;
+  color: white;
+  padding: 12px 0px;
+}
+
+#sub-header > div{
+  height: 36px;
+}
+
+.uk-subnav > *{
+  padding-right: 20px;
+}
+
+#timeline > div{
+  margin: 0px;
+}

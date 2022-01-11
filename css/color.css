@@ -1,0 +1,31 @@
+:root{
+  --primary-color: #194a8c;
+  --gray-light: #fefefe;
+  --gray-medium: #aeaeae;
+  --gray-dark: #5b5b5b;
+  --magenta: #6d2055;
+}
+
+.uk-background-default {
+  background-color: var(--gray-medium);
+}
+.uk-background-muted {
+  background-color: var(--gray-light);
+}
+.uk-background-primary {
+  background-color: var(--primary-color);
+}
+.uk-background-secondary {
+  background-color: var(--gray-dark);
+}
+
+nav ul>li{
+  background-color: var(--gray-light);
+}
+nav ul>li:hover{
+  background-color: var(--gray-medium);
+}
+
+nav > ul > li > a{
+  color: var(--magenta) !important;
+}

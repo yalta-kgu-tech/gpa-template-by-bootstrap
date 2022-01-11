@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto+Condensed&display=swap');
+
+h1,h2,h3,h4,h5,
+nav ul li
+{
+  font-family: 'Oswald', sans-serif;
+}
+
+nav ul>li>a{
+  font-size: 16px !important;
+  margin: 6px 2px;
+  font-weight: bold;
+}
+
+p{
+  font-family: 'Roboto Condensed', sans-serif;
+}
