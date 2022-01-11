@@ -29,14 +29,12 @@ $templatePath = 'templates/' . $this->template;
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="<?php echo $this->baseurl.'/'.$templatePath ?>/vendor/uikit/css/uikit.min.css" type="text/css" />
-
   <link rel="stylesheet" href="<?php echo $this->baseurl.'/'.$templatePath ?>/css/main.css" type="text/css" />
   <link rel="stylesheet" href="<?php echo $this->baseurl.'/'.$templatePath ?>/css/font.css" type="text/css" />
   <link rel="stylesheet" href="<?php echo $this->baseurl.'/'.$templatePath ?>/css/color.css" type="text/css" />
 
-  <script src="<?php echo $this->baseurl.'/'.$templatePath ?>/vendor/uikit/js/uikit.min.js"></script>
-  <script src="<?php echo $this->baseurl.'/'.$templatePath ?>/vendor/uikit/js/uikit-icons.js"></script>
+  <script src="<?php echo $this->baseurl.'/'.$templatePath ?>/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="<?php echo $this->baseurl.'/'.$templatePath ?>/vendor/bootstrap/css/bootstrap.min.css" type="text/css" />
 
 </head>
 
