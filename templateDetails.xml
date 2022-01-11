@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="template" client="site">
-	<name> (by Bootstrap)</name>
+	<name>GPA Template(by Bootstrap)</name>
 	<version>0.1</version>
 	<creationDate>January 2022</creationDate>
 	<author>Sevastiyan Nikiforov</author>
