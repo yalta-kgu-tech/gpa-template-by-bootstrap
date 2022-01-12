@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="template" client="site">
-	<name>GPA Style (by UIKit)</name>
-	<version>1.0</version>
-	<creationDate>April 2021</creationDate>
-	<author>Max V. Shumakov</author>
-	<authorEmail>admin@joomla.org</authorEmail>
-	<copyright>(C) 2017 Open Source Matters, Inc.</copyright>
+	<name>GPA Template(by Bootstrap)</name>
+	<version>0.1</version>
+	<creationDate>January 2022</creationDate>
+	<author>Sevastiyan Nikiforov</author>
+	<authorEmail>yalta.kgu.tech@gmail.com</authorEmail>
+	<copyright>(C) 2022 The Humanities and Pedagogical Academy</copyright>
 	<description>TPL_GPASTYLE_XML_DESCRIPTION</description>
 	<files>
 		<filename>component.php</filename>
