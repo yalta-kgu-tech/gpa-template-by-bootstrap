@@ -47,7 +47,7 @@ $templatePath = 'templates/' . $this->template;
             <img id="header-logo" src="<?php echo $this->baseurl.'/'.$templatePath ?>/images/logo4header.png" alt="ГПА г.Ялта" class="">
           </div>
           <div class="col-4">
-            <h1 id="header-text" class=""></h1>
+            <h1 id="header-text" class=""><?php echo TPL_GPASTYLE_XML_SITENAME; ?></h1>
           </div>
           <div class="col-1">
             <p>&#178;</p>
