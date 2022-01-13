@@ -19,13 +19,12 @@
   background-color: var(--gray-dark);
 }
 
-nav ul>li{
+ul#sub-header-menu > li{
   background-color: var(--gray-light);
 }
-nav ul>li:hover{
+ul#sub-header-menu > li:hover{
   background-color: var(--gray-medium);
 }
-
-nav > ul > li > a{
+ul#sub-header-menu > li > a{
   color: var(--magenta) !important;
 }

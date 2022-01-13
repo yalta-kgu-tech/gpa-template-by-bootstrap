@@ -22,27 +22,29 @@
 		<folder>language</folder>
 		<folder>vendor</folder>
 	</files>
+
 	<positions>
+		<position>super-header-left</position>
+		<position>super-header-center</position>
+		<position>super-header-right</position>
+
 		<position>header</position>
-			<position>search</position>
-			<position>language</position>
-		<position>sub-header</position>
-		<position>top</position>
-			<position>showplace</position>
-			<position>actual</position>
-		<position>timeline</position>
-		<position>main-block</position>
-			<position>content</position>
-			<position>sidebar</position>
-		<position>bottom-a</position>
-		<position>bottom-b</position>
+
+		<position>sub-header-left</position>
+		<position>sub-header-right</position>
+
+		<position>actual-left</position>
+		<position>actual-right</position>
+
 		<position>footer</position>
 		<position>debug</position>
 	</positions>
+
 	<languages folder="language">
 		<language tag="en-GB">en-GB/gpa-style.ini</language>
 		<language tag="ru-RU">ru-RU/gpa-style.ini</language>
 	</languages>
+
 	<config>
 	</config>
 </extension>

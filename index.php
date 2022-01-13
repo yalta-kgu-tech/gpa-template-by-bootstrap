@@ -40,38 +40,66 @@ $templatePath = 'templates/' . $this->template;
 
 <body>
 
-  <div class="container">
-    <header class="py-3 mb-4 border-bottom" style="background-image: url(<?php echo $this->baseurl.'/'.$templatePath ?>/images/head-section-bg.png);">
-        <div class="row" style="background-image: url(<?php echo $this->baseurl.'/'.$templatePath ?>/images/head-container-bg.png);">
-          <div class="col-2">
-            <img id="header-logo" src="<?php echo $this->baseurl.'/'.$templatePath ?>/images/logo4header.png" alt="ГПА г.Ялта" class="">
-          </div>
-          <div class="col-4">
-            <h1 id="header-text" class=""><?php echo TPL_GPASTYLE_XML_SITENAME; ?></h1>
-          </div>
-          <div class="col-1">
-            <p>&#178;</p>
-            <jdoc:include type="module" name="header" title="Header" />
-          </div>
-        </div>
-    </header>
-  </div>
+  <pre><?php// var_export($app);?></pre>
 
-  <section id="sub-header" class="">
-    <div class="uk-container">
-      <jdoc:include type="modules" name="sub-header" title="Sub Header" />
+  <section id="super-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <p>&larr;</p>
+          <jdoc:include type="modules" name="super-header-left" title="Super Header Left" />
+        </div>
+        <div class="col-6">
+          <p>&#8597;</p>
+          <jdoc:include type="modules" name="super-header-center" title="Super Header Center" />
+        </div>
+        <div class="col-3">
+          <p>&rarr;</p>
+          <jdoc:include type="modules" name="super-header-right" title="Super Header Right" />
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="attention" class="">
+  <header style="background-image: url(<?php echo $this->baseurl.'/'.$templatePath ?>/images/head-section-bg.png);">
+    <div class="container">
+      <div class="row" style="background-image: url(<?php echo $this->baseurl.'/'.$templatePath ?>/images/head-container-bg.png);">
+        <div class="col-4">
+          <img id="header-logo" src="<?php echo $this->baseurl.'/'.$templatePath ?>/images/logo4header.png" alt="ГПА г.Ялта" class="">
+        </div>
+        <div class="col-8">
+          <h1 id="header-text" class=""><?php echo $app->get('sitename');?></h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="sub-header" class="">
     <div class="container">
       <div class="row">
-        <div class="col-5">
+        <div class="col-10">
+          <p>&larr;</p>
+          <jdoc:include type="modules" name="sub-header-left" title="Sub Header Left" />
+        </div>
+        <div class="col-2">
+          <p>&rarr;</p>
+          <jdoc:include type="modules" name="sub-header-right" title="Sub Header Right" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="actual" class="">
+    <div class="container">
+      <div class="row">
+        <div class="col-8">
+          <jdoc:include type="modules" name="actual-left" title="Actual Left" />
           <iframe width="800" height="450" src="https://www.youtube.com/embed/idLgytCiRaw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <div class="col-1">
+        <div class="col-4">
+          <p>&rarr;</p>
+          <jdoc:include type="modules" name="actual-right" title="Actual Right" />
         </div>
-          <jdoc:include type="modules" name="actual" title="Actual Block" />
       </div>
     </div>
   </section>

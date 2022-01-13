@@ -8,7 +8,7 @@ nav ul li
   font-family: 'Oswald', sans-serif;
 }
 
-nav ul>li>a{
+ul#sub-header-menu > li > a{
   font-size: 16px !important;
   margin: 6px 2px;
   font-weight: bold;
