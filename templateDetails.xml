@@ -36,15 +36,21 @@
 		<position>actual-left</position>
 		<position>actual-right</position>
 
-		<position>footer</position>
+		<position>side-bar</position>
+
+		<position>footer-left</position>
+		<position>footer-center</position>
+		<position>footer-right</position>
+
 		<position>debug</position>
 	</positions>
 
 	<languages folder="language">
-		<language tag="en-GB">en-GB/gpa-style.ini</language>
-		<language tag="ru-RU">ru-RU/gpa-style.ini</language>
+		<language tag="en-GB">en-GB/tpl_gpa-by-bootstrap.ini</language>
+		<language tag="ru-RU">ru-RU/tpl_gpa-by-bootstrap.ini</language>
 	</languages>
 
 	<config>
 	</config>
+
 </extension>

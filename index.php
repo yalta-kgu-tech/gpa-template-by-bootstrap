@@ -10,7 +10,10 @@ use Joomla\CMS\Uri\Uri;
 $app = Factory::getApplication();
 $wa  = $this->getWebAssetManager();
 
-$sitename = htmlspecialchars($app->get('sitename'), ENT_QUOTES, 'UTF-8');
+// $sitename = htmlspecialchars($app->get('sitename'), ENT_QUOTES, 'UTF-8');
+$sitename = Text::_('TPL_GPASTYLE_XML_SITENAME');
+// $sitetitle = $app->get('sitename');
+$sitetitle = Text::_('TPL_GPASTYLE_XML_SITETITLE');
 $menu     = $app->getMenu()->getActive();
 
 $templatePath = 'templates/' . $this->template;
@@ -21,7 +24,7 @@ $templatePath = 'templates/' . $this->template;
 
 <head>
 
-  <title><?php echo $sitename?></title>
+  <title><?php echo $sitetitle?></title>
 
   <jdoc:include type="metas" />
 	<jdoc:include type="styles" />
@@ -64,11 +67,11 @@ $templatePath = 'templates/' . $this->template;
   <header style="background-image: url(<?php echo $this->baseurl.'/'.$templatePath ?>/images/head-section-bg.png);">
     <div class="container">
       <div class="row" style="background-image: url(<?php echo $this->baseurl.'/'.$templatePath ?>/images/head-container-bg.png);">
-        <div class="col-4">
+        <div class="col-1">
           <img id="header-logo" src="<?php echo $this->baseurl.'/'.$templatePath ?>/images/logo4header.png" alt="ГПА г.Ялта" class="">
         </div>
-        <div class="col-8">
-          <h1 id="header-text" class=""><?php echo $app->get('sitename');?></h1>
+        <div class="col-11">
+          <h1 id="header-text" class=""><?php echo $sitename;?></h1>
         </div>
       </div>
     </div>
@@ -94,7 +97,7 @@ $templatePath = 'templates/' . $this->template;
       <div class="row">
         <div class="col-8">
           <jdoc:include type="modules" name="actual-left" title="Actual Left" />
-          <iframe width="800" height="450" src="https://www.youtube.com/embed/idLgytCiRaw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <!-- <iframe width="800" height="450" src="https://www.youtube.com/embed/idLgytCiRaw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
         </div>
         <div class="col-4">
           <p>&rarr;</p>
@@ -104,33 +107,47 @@ $templatePath = 'templates/' . $this->template;
     </div>
   </section>
 
-  <div class="container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <p class="col-md-4 mb-0 text-muted">&copy; 2021 Company, Inc</p>
-
-      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-      </a>
-
-      <ul class="nav col-md-4 justify-content-end">
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
-      </ul>
-    </footer>
-  </div>
-  <!-- <section id="footer" class="uk-section uk-padding-remove uk-background-secondary">
-    <div class="uk-container">
-      <jdoc:include type="modules" name="footer" title="Footer Block" />
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-8">
+          <jdoc:include type="component" />
+        </div>
+        <div class="col-4">
+          <jdoc:include type="modules" name="side-bar" title="SideBar" />
+        </div>
+      </div>
     </div>
-  </section>
-  <section id="debug" class="uk-section uk-padding-remove uk-background-muted">
-    <div class="uk-container">
+  </main>
+
+    <footer class="">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <p>&larr;</p>
+            <jdoc:include type="modules" name="footer-left" title="Footer Left" />
+          </div>
+          <div class="col-4">
+            <p>&#8597;</p>
+            <jdoc:include type="modules" name="footer-center" title="Footer Center" />
+          </div>
+          <div class="col-4">
+            <p>&rarr;</p>
+            <jdoc:include type="modules" name="footer-right" title="Footer Right" />
+          </div>
+        </div>
+        <div class="row">
+          <p class="col-md-4 mb-0 text-muted">&copy; 2022 <?php echo $sitename;?></p>
+        </div>
+      </div>
+    </footer>
+
+  <section id="debug" class="">
+    <div class="container">
       <jdoc:include type="modules" name="debug" title="" />
     </div>
-  </section> -->
+  </section>
+
 </body>
 
 </html>
